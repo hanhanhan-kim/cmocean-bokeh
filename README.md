@@ -4,3 +4,7 @@ This repo contains utility functions that convert the colour maps found in [`cmo
 
 `get_all_cmocean_colours()` returns a dictionary of `cmocean`'s colour maps.
 
+Install `cmocean` with Anaconda:
+```bash
+conda install -c conda-forge cmocean
+```
