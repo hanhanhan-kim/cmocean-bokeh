@@ -47,9 +47,9 @@ def get_all_cmocean_colours():
     cmocean_attrs = dir(cmocean.cm)
 
     hexcolourmaps_dict = {}
-    for i, cmocean_attr in enumerate(cmocean_attrs):
+    for cmocean_attr in cmocean_attrs:
 
-        attr_instance = getattr(cmocean.cm, cmocean_attrs[i])
+        attr_instance = getattr(cmocean.cm, cmocean_attr)
         attr_type = type(attr_instance)
 
         if attr_type is matplotlib.colors.LinearSegmentedColormap:
